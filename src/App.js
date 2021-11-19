@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import './App.css';
 import { 
   Card, 
@@ -11,23 +11,43 @@ import {
 
 
 function App() {
+
+  const [ txtNumeros, setTxtNumeros ] = useState('0')
+
+  const adicionarNumero = (numero) => {
+    setTxtNumeros(txtNumeros + numero)
+  }
+
+  const definirOperacao = (op) => {
+    setTxtNumeros(op)
+  }
+
   return (
     <>
     <h1>Calculadora</h1>
     <Card style={{
       background: 'tranparente !important',
       backgroundColor: "#242730",
-      padding: "10px",
+      padding: "20px",
       width: "400px",
-      borderRadius: "0px"
+      borderRadius: "5px"
     }}>
-    <Container>
+    <Container
+      style={{
+        padding: "2px"
+      }}
+    >
       <Row>
           <Col>
           <Form.Control type="text"
           name="txtNumeros"
-          class="text-right"
-          readOnly="readonly" />
+          readOnly="readonly"
+          value={txtNumeros} 
+          
+          style={{
+            textAlign: "right"
+          }}
+          />
           </Col>
       </Row>
 
@@ -39,64 +59,92 @@ function App() {
           <Button variant="secondary">%</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">/</Button>
+          <Button variant="warning"
+          onClick={() => definirOperacao("/")}
+          >/</Button>
         </Col>
       </Row>
 
       <Row>
         <Col xs="3">
-          <Button variant="secondary">7</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('7')}
+          >7</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">8</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('8')}
+          >8</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">9</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('9')}
+          >9</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">x</Button>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col xs="3">
-          <Button variant="secondary">4</Button>
-        </Col>
-        <Col xs="3">
-          <Button variant="secondary">5</Button>
-        </Col>
-        <Col xs="3">
-          <Button variant="secondary">6</Button>
-        </Col>
-        <Col xs="3">
-          <Button variant="secondary">-</Button>
+          <Button variant="warning"
+          onClick={() => definirOperacao("*")}
+          >x</Button>
         </Col>
       </Row>
 
       <Row>
         <Col xs="3">
-          <Button variant="secondary">1</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('4')}
+          >4</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">2</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('5')}
+          >5</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">3</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('6')}
+          >6</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">+</Button>
+          <Button variant="warning"
+          onClick={() => definirOperacao("-")}
+          >-</Button>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs="3">
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('1')}
+          >1</Button>
+        </Col>
+        <Col xs="3">
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('2')}
+          >2</Button>
+        </Col>
+        <Col xs="3">
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('3')}
+          >3</Button>
+        </Col>
+        <Col xs="3">
+          <Button variant="warning"
+          onClick={() => definirOperacao("+")}
+          >+</Button>
         </Col>
       </Row>
 
       <Row>
         <Col xs="6">
-          <Button variant="secondary">0</Button>
+          <Button variant="secondary"
+          onClick={() => adicionarNumero('0')}
+          >0</Button>
         </Col>
         <Col xs="3">
           <Button variant="secondary">,</Button>
         </Col>
         <Col xs="3">
-          <Button variant="secondary">=</Button>
+          <Button variant="success">=</Button>
         </Col>
       </Row>
 
