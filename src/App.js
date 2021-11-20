@@ -23,18 +23,20 @@ function App() {
   }
 
   return (
-    <>
+    <div className="fundo">
     <h1>Calculadora</h1>
-    <Card style={{
+    <Card border="light" style={{
       background: 'tranparente !important',
       backgroundColor: "#242730",
       padding: "20px",
-      width: "400px",
-      borderRadius: "5px"
+      margin: "30px",
+      width: "300px",
+      borderRadius: "5px" 
     }}>
     <Container
       style={{
-        padding: "2px"
+        padding: "1px",
+        
       }}
     >
       <Row>
@@ -43,7 +45,6 @@ function App() {
           name="txtNumeros"
           readOnly="readonly"
           value={txtNumeros} 
-          
           style={{
             textAlign: "right"
           }}
@@ -151,7 +152,7 @@ function App() {
     </Container>
       
     </Card>
-    </>
+    </div>
   );
 }
 
