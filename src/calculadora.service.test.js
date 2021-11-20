@@ -4,7 +4,7 @@ import CalculadoraService from './calculadora.service'
 
 describe('Teste do CalculadoraService', () => {
 
-    const [calcular, concatenarNumero, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO, PORCENTAGEM] = CalculadoraService()
+    const [calcular, concatenarNumero, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO] = CalculadoraService()
 
     it('Deve garantir que 1 + 4 = 5', () => {
         let soma = calcular(1, 4, SOMA)
@@ -26,13 +26,8 @@ describe('Teste do CalculadoraService', () => {
         expect(multiplicacao).toEqual(4)
     })
 
-    it('Deve garantir que 200 / 100 = 2 ', () => {
-        let porcentagem = calcular(200, 100, PORCENTAGEM)
-        expect(porcentagem).toEqual(2)
-    })
-
     it('Deve retornar 0 para operação inválida', () => {
-        let operacaoInvalida = calcular(1, 4, '**')
+        let operacaoInvalida = calcular(1, 4, '%')
         expect(operacaoInvalida).toEqual(0)
     })
 })

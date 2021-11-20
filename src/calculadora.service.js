@@ -4,7 +4,6 @@ function CalculadoraService() {
     const SUBTRACAO = "-"
     const DIVISAO = "/"
     const MULTIPLICACAO = "*"
-    const PORCENTAGEM = "%"
 
     function calcular(numero1, numero2, operacao){
         let resultado
@@ -17,8 +16,6 @@ function CalculadoraService() {
             case DIVISAO: resultado = numero1 / numero2
             break
             case MULTIPLICACAO: resultado = numero1 * numero2
-            break
-            case PORCENTAGEM: resultado = numero1 / 100
             break
             default: resultado = 0
         }
@@ -43,7 +40,7 @@ function CalculadoraService() {
         return numAtual + numConcat
     }
 
-    return [calcular, concatenarNumero, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO, PORCENTAGEM]
+    return [calcular, concatenarNumero, SOMA, SUBTRACAO, DIVISAO, MULTIPLICACAO]
 }
 
 export default CalculadoraService
