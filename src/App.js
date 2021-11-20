@@ -90,6 +90,7 @@ function App() {
           name="txtNumeros"
           readOnly="readonly"
           value={txtNumeros} 
+          data-testid="txtNumeros"
           style={{
             textAlign: "right"
           }}
@@ -97,7 +98,7 @@ function App() {
           </Col>
       </Row>
 
-      <Row style={{marginTop: '20px'}}>
+      <Row style={{marginTop: '10px'}}>
         <Col xs="9">
           <Button variant="secondary"
           onClick={limpar}
@@ -110,7 +111,7 @@ function App() {
         </Col>
       </Row>
 
-      <Row style={{marginTop: '20px'}}>
+      <Row style={{marginTop: '10px'}}>
         <Col xs="3">
           <Button variant="secondary"
           onClick={() => adicionarNumero('7')}
@@ -133,7 +134,7 @@ function App() {
         </Col>
       </Row>
 
-      <Row style={{marginTop: '20px'}}>
+      <Row style={{marginTop: '10px'}}>
         <Col xs="3">
           <Button variant="secondary"
           onClick={() => adicionarNumero('4')}
@@ -156,7 +157,7 @@ function App() {
         </Col>
       </Row>
 
-      <Row style={{marginTop: '20px'}}>
+      <Row style={{marginTop: '10px'}}>
         <Col xs="3">
           <Button variant="secondary"
           onClick={() => adicionarNumero('1')}
@@ -179,7 +180,7 @@ function App() {
         </Col>
       </Row>
 
-      <Row style={{marginTop: '20px'}}>
+      <Row style={{marginTop: '10px'}}>
         <Col xs="6">
           <Button variant="secondary"
           onClick={() => adicionarNumero('0')}
