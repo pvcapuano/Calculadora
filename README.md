@@ -27,6 +27,7 @@ Calculadora para fazer operações aritiméticas. Aplicação web desenvolvida e
 </p>
 
 ## Tecnologias:
+
 * ReactJs
 * React Hooks
 * Bootstrap 5
@@ -34,6 +35,7 @@ Calculadora para fazer operações aritiméticas. Aplicação web desenvolvida e
 * React Testing Library
 
 ## Objetivo:
+
 Estudar mais sobre o Bootstrap e começar a fazer testes na aplicação através do Jest.
 
 ## Atividades realizadas:
