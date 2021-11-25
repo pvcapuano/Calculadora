@@ -1,3 +1,7 @@
+## Resumo 
+
+Calculadora para fazer operações aritiméticas. 
+
 ## Projeto
 
 ![Captura de Tela 2021-11-20 às 15 34 49](https://user-images.githubusercontent.com/10540844/142737638-4ef1cf7d-4da0-4aff-8d1b-e0cb9970dfec.png)
@@ -19,10 +23,18 @@
 * Jest
 * React Testing Library
 
+## Rodando o projeto:
+
+* git clone <...link do repo...>
+* cd calculadora
+* npm i (instala todas as dependências)
+* npm start (inicia o projeto)
+* npm run test (inicia o teste)
+
 ## Objetivo:
 Estudar mais sobre o Bootstrap e começar a fazer testes na aplicação através do Jest.
 
-## Resumo:
+## Atividades realizadas:
 
 * Foi usado o Bootstrap para fazer a estilização dos botões e do card. 
 * Foi criado um arquivo calculadora.service.test para testar se as operações aritiméticas estavam funcionando corretamente.
