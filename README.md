@@ -1,8 +1,8 @@
-## Resumo 
+## Resumo: 
 
 Calculadora para fazer operações aritiméticas. 
 
-## Projeto
+## Projeto:
 
 ![Captura de Tela 2021-11-20 às 15 34 49](https://user-images.githubusercontent.com/10540844/142737638-4ef1cf7d-4da0-4aff-8d1b-e0cb9970dfec.png)
 
@@ -25,7 +25,7 @@ Calculadora para fazer operações aritiméticas.
 
 ## Rodando o projeto:
 
-* git clone <...link do repo...>
+* git clone https://github.com/pvcapuano/Calculadora.git
 * cd calculadora
 * npm i (instala todas as dependências)
 * npm start (inicia o projeto)
