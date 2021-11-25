@@ -1,6 +1,14 @@
 ## Resumo: 
 
-Calculadora para fazer operações aritiméticas. 
+Calculadora para fazer operações aritiméticas. Aplicação web desenvolvida em ReactJs. 
+
+## Rodando o projeto:
+
+* git clone https://github.com/pvcapuano/Calculadora.git
+* cd calculadora
+* npm i (instala todas as dependências)
+* npm start (inicia o projeto)
+* npm run test (inicia o teste)
 
 ## Projeto:
 
@@ -24,14 +32,6 @@ Calculadora para fazer operações aritiméticas.
 * Bootstrap 5
 * Jest
 * React Testing Library
-
-## Rodando o projeto:
-
-* git clone https://github.com/pvcapuano/Calculadora.git
-* cd calculadora
-* npm i (instala todas as dependências)
-* npm start (inicia o projeto)
-* npm run test (inicia o teste)
 
 ## Objetivo:
 Estudar mais sobre o Bootstrap e começar a fazer testes na aplicação através do Jest.
