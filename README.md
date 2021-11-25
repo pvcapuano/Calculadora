@@ -4,9 +4,11 @@ Calculadora para fazer operações aritiméticas.
 
 ## Projeto:
 
-![Captura de Tela 2021-11-20 às 15 34 49](https://user-images.githubusercontent.com/10540844/142737638-4ef1cf7d-4da0-4aff-8d1b-e0cb9970dfec.png)
+![Captura de Tela 2021-11-20 às 15 34 49](https://user-images.githubusercontent.com/10540844/142737638-4ef1cf7d-4da0-4aff-8d1b-e0cb9970dfec.png) <br>
+<sub>Visão geral do projeto</sub>
 
-![Captura de Tela 2021-11-20 às 15 34 31](https://user-images.githubusercontent.com/10540844/142737643-88cbf750-61e9-4d47-ad12-f9bf2b71d115.png)
+![Captura de Tela 2021-11-20 às 15 34 31](https://user-images.githubusercontent.com/10540844/142737643-88cbf750-61e9-4d47-ad12-f9bf2b71d115.png) <br>
+<sub>Teste rodando</sub>
 
 ## Projeto em produção:
 
